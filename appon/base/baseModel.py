@@ -34,8 +34,9 @@ def connDB(sql,execType = 'select',fetchType = 'one',fetchNum = 1,isexecMnay = F
         return  False
     # db = mysql.connector.connect("localhost", "root", "root", "game_data")
 
+    # 创建数据库连接
     conn = mysql.connector.connect(**dbInfo)
-    # return db
+
     # 使用 cursor() 方法创建一个游标对象 cursor
     cursor = conn.cursor(dictionary = True)
 
@@ -69,8 +70,7 @@ def connDB(sql,execType = 'select',fetchType = 'one',fetchNum = 1,isexecMnay = F
 
         if fetchType == "one" :
             ref = cursor.fetchone()
-            # print(ref)
-            # return ref
+
         elif  fetchType == "many" :
             ref = cursor.fetchmany(fetchNum)
 

@@ -19,6 +19,7 @@ def index():
     else:
         return redirect(url_for('login'))
 
+
 @app.route('/login')
 def login():
     return render_template('login/index.html')
@@ -37,6 +38,7 @@ def home():
 @app.route('/logout')
 def logout():
     return HomeC.logout()
+
 
 if __name__ == '__main__':
     app.run()

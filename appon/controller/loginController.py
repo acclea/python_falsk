@@ -25,11 +25,13 @@ def doLogin():
         return "this user is not exist or forbid "
 
 
-
     # 可以设置session有效期
     session.permanent = True
     session["username"] = username
     session["userid"]   = adminInfo['id']
+
+    # 读取session
+    # session.get('username')
 
     # 登陆跳转
     return redirect(url_for('home'))
