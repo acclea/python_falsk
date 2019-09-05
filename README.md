@@ -4,7 +4,7 @@
 ##app.py是flask 练习
 ##tl.py是scrapy 练习
 
-#环境准备
+# 环境准备
 python3.0以上，安装flask、scrapy、mysql等
 
 # 项目涉及知识
