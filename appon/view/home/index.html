@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--引入公用文件头-->
+    <!--extends 引入文件时，一个html 只能使用一次-->
+    {% extends "public/header.html" %}
+
+    <!--include 引入文件时，一个html 可以使用多次-->
+    {% include "public/header.html" %}
+
+    <div>
+        这里是home主页
+    </div>
+
+    <!--引入公用文件头-->
+    {% include "public/footer.html" %}
+</body>
+</html>
