@@ -1,8 +1,8 @@
 # 项目说明
 一个简单的flask 练习demo，借助以往其他语言的书写习惯，自己搭建的 MVC 结构
 只实现了用户的登陆、跳转、登出这几个简单的业务，
-##app.py是flask 练习
-##tl.py是scrapy 练习
+## app.py是flask 练习
+## tl.py是scrapy 练习
 
 # 环境准备
 python3.0以上，安装flask、scrapy、mysql等
